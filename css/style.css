@@ -825,6 +825,7 @@ footer::before {
   color: #636363;
   font-size: 16px;
   transition: all 0.5s;
+  position: relative;
 }
 
 .footer_item i {
@@ -859,10 +860,11 @@ footer::before {
   background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.5s;
 }
+
 .footer_subcribe .form input:hover {
   border-color: pink;
 }
-.footer_copyright a:hover {
+.footer_copyright .footer_right a:hover {
   background: #f55f8d;
 }
 /* backToTop css ------------------------------- */
