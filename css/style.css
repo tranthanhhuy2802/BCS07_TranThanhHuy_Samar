@@ -867,6 +867,14 @@ footer::before {
 .footer_copyright .footer_right a:hover {
   background: #f55f8d;
 }
+.footer_subcribe button:hover {
+  background-position: right center;
+}
+
+.footer_subcribe button:hover i {
+  animation: toLeftFromRight 0.5s forwards;
+  display: inline-block;
+}
 /* backToTop css ------------------------------- */
 .backToTop {
   width: 50px;
@@ -912,5 +920,20 @@ footer::before {
 
   100% {
     transform: rotate(1deg) translate(2px, 2px);
+  }
+}
+
+@keyframes toLeftFromRight {
+  49% {
+    transform: translateX(100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  51% {
+    opacity: 1;
   }
 }
